@@ -1,0 +1,267 @@
+/* Extension Island Container */
+.youtube-extension-island {
+  background-color: #ffffff;
+  color: #030303; /* Default text color for light mode */
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 16px;
+  padding: 16px;
+  width: calc(100% - 2px); /* Account for borders */
+  box-sizing: border-box;
+  font-family: 'Roboto', Arial, sans-serif;
+  z-index: 100;
+  border: 1px solid #e5e5e5;
+  /* Ensure the island is visible even if YouTube changes its layout */
+  position: relative;
+  /* Match YouTube's dark mode if active */
+  color-scheme: light dark;
+}
+
+/* Extension Title */
+.youtube-extension-title {
+  color: #030303;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+/* Dark mode support */
+[dark-theme-enabled] .youtube-extension-island,
+html[dark] .youtube-extension-island,
+ytd-app[dark-theme] .youtube-extension-island,
+:root.dark-theme .youtube-extension-island {
+  background-color: #212121;
+  border-color: #383838;
+  color: #f1f1f1; /* Default text color for dark mode */
+}
+
+[dark-theme-enabled] .youtube-extension-title,
+html[dark] .youtube-extension-title,
+ytd-app[dark-theme] .youtube-extension-title {
+  color: #f1f1f1;
+  border-bottom-color: #383838;
+}
+
+/* Buttons Container */
+.youtube-extension-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+/* Common Button Styles */
+.youtube-extension-btn {
+  background-color: #065fd4;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  flex: 1;
+  text-align: center;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
+}
+
+.youtube-extension-btn:hover {
+  background-color: #0356c2;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.youtube-extension-btn:active {
+  background-color: #0249a5;
+  transform: scale(0.98);
+}
+
+/* Hook Button Specific Styles */
+.hook-btn {
+  background-color: #065fd4;
+}
+
+/* Script Button Specific Styles */
+.script-btn {
+  background-color: #ff0000;
+}
+
+.script-btn:hover {
+  background-color: #cc0000;
+}
+
+.script-btn:active {
+  background-color: #aa0000;
+}
+
+/* Subtitle Container Styles */
+.youtube-extension-subtitle-container {
+  margin-top: 16px;
+  max-height: 400px;
+  overflow-y: auto;
+  border-top: 1px solid #e5e5e5;
+  padding-top: 12px;
+  transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+/* Dark mode support for subtitle container */
+[dark-theme-enabled] .youtube-extension-subtitle-container,
+html[dark] .youtube-extension-subtitle-container,
+ytd-app[dark-theme] .youtube-extension-subtitle-container {
+  border-top-color: #383838;
+}
+
+/* Subtitle List Styles */
+.youtube-extension-subtitle-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Caption Styles */
+.youtube-extension-caption {
+  display: flex;
+  padding: 6px 8px;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.youtube-extension-caption:hover {
+  background-color: #eaeaea;
+}
+
+/* Dark mode support for captions */
+[dark-theme-enabled] .youtube-extension-caption,
+html[dark] .youtube-extension-caption,
+ytd-app[dark-theme] .youtube-extension-caption,
+:root.dark-theme .youtube-extension-caption {
+  background-color: #2d2d2d;
+}
+
+/* Dark mode support for caption text */
+[dark-theme-enabled] .youtube-extension-caption-text,
+html[dark] .youtube-extension-caption-text,
+ytd-app[dark-theme] .youtube-extension-caption-text,
+:root.dark-theme .youtube-extension-caption-text {
+  color: #f1f1f1;
+}
+
+[dark-theme-enabled] .youtube-extension-caption:hover,
+html[dark] .youtube-extension-caption:hover,
+ytd-app[dark-theme] .youtube-extension-caption:hover {
+  background-color: #3d3d3d;
+}
+
+/* Timestamp Styles */
+.youtube-extension-timestamp {
+  color: #606060;
+  font-size: 12px;
+  min-width: 40px;
+  margin-right: 8px;
+  font-family: monospace;
+}
+
+/* Dark mode support for timestamp */
+[dark-theme-enabled] .youtube-extension-timestamp,
+html[dark] .youtube-extension-timestamp,
+ytd-app[dark-theme] .youtube-extension-timestamp {
+  color: #aaaaaa;
+}
+
+/* Caption Text Styles */
+.youtube-extension-caption-text {
+  flex: 1;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #030303; /* Default text color for light mode */
+}
+
+/* Error Message Styles */
+.youtube-extension-error {
+  color: #cc0000;
+  padding: 12px;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* Dark mode support for error messages */
+[dark-theme-enabled] .youtube-extension-error,
+html[dark] .youtube-extension-error,
+ytd-app[dark-theme] .youtube-extension-error,
+:root.dark-theme .youtube-extension-error {
+  color: #ff6b6b; /* Lighter red for dark mode */
+}
+
+/* Message Styles */
+.youtube-extension-message {
+  color: #606060;
+  padding: 12px;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* Dark mode support for message */
+[dark-theme-enabled] .youtube-extension-message,
+html[dark] .youtube-extension-message,
+ytd-app[dark-theme] .youtube-extension-message {
+  color: #aaaaaa;
+}
+
+/* Generate Button Container */
+.youtube-extension-button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+/* Generate Button Styles */
+.generate-btn {
+  background-color: #2ba640;
+}
+
+.generate-btn:hover {
+  background-color: #259638;
+}
+
+.generate-btn:active {
+  background-color: #1f8730;
+}
+
+/* Loading Spinner Styles */
+.youtube-extension-spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  gap: 6px;
+}
+
+/* Dark mode support for spinner */
+[dark-theme-enabled] .spinner-dot,
+html[dark] .spinner-dot,
+ytd-app[dark-theme] .spinner-dot,
+:root.dark-theme .spinner-dot {
+  background-color: #4dabf7; /* Lighter blue for dark mode */
+}
+
+.spinner-dot {
+  width: 8px;
+  height: 8px;
+  background-color: #065fd4;
+  border-radius: 50%;
+  animation: bounce 1.4s infinite ease-in-out both;
+}
+
+.spinner-dot:nth-child(1) { animation-delay: -0.32s; }
+.spinner-dot:nth-child(2) { animation-delay: -0.16s; }
+.spinner-dot:nth-child(3) { animation-delay: 0s; }
+.spinner-dot:nth-child(4) { animation-delay: 0.16s; }
+
+@keyframes bounce {
+  0%, 80%, 100% { transform: scale(0); }
+  40% { transform: scale(1.0); }
+}
