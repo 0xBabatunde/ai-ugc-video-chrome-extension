@@ -3,7 +3,7 @@
   "name": "AI UGC Video Script",
   "version": "1.0",
   "description": "Adds a button when visiting YouTube to create a UGC script from a video caption.",
-  "permissions": ["activeTab", "scripting"],
+  "permissions": [],
   "host_permissions": ["*://*.youtube.com/*"],
   "action": {
     "default_icon": {

@@ -1,0 +1,27 @@
+# AI UGC Video Script - YouTube Content Creation Assistant
+
+Transform any YouTube video into engaging UGC (User-Generated Content) scripts with just a click! AI UGC Video Script is the perfect tool for content creators, marketers, and social media managers looking to repurpose existing content or find inspiration for new videos.
+
+## Key Features:
+
+• **Create Hooks**: Generate attention-grabbing hooks from any YouTube video to captivate your audience in the first few seconds.
+
+• **Create Short Scripts**: Instantly transform video content into optimized scripts perfect for short-form content platforms like TikTok, Instagram Reels, and YouTube Shorts.
+
+• **Seamless YouTube Integration**: Our extension adds a convenient tools panel above the YouTube sidebar on video watch pages, providing easy access without disrupting your viewing experience.
+
+• **Works with YouTube's Interface**: Compatible with both light and dark themes, our extension integrates naturally with YouTube's design.
+
+• **Simple and Intuitive**: No complicated settings or configurations - just click a button and get results.
+
+Whether you're a content creator looking for inspiration, a marketer repurposing content, or a social media manager creating engaging shorts, AI UGC Video Script helps you save time and boost creativity.
+
+Note: This extension accesses video captions to generate scripts and operates entirely within your browser.
+
+## Permission Justifications:
+
+### host_permissions for YouTube
+The host permission for YouTube domains (*://*.youtube.com/*) is necessary to ensure our extension functions properly on all YouTube pages. This permission allows our extension to detect when you're watching a YouTube video and insert our UI elements seamlessly into the YouTube interface. We only activate our extension on YouTube video watch pages.
+
+## Single Purpose Description
+AI UGC Video Script serves a single purpose: to help users create content from YouTube videos by generating hooks and short scripts based on video captions. The extension enhances the YouTube watching experience by providing tools to transform video content into shareable UGC formats without leaving the YouTube interface.
